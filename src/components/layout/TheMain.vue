@@ -40,9 +40,9 @@ export default {
 			}
 		},
 		adjustScreen() {
-			if (window.innerWidth < 600) {
+			if (window.innerWidth < 750) {
 				this.curScreen = 'mobile';
-			} else if (window.innerWidth < 890) {
+			} else if (window.innerWidth < 1200) {
 				this.curScreen = 'tablet';
 			} else {
 				this.curScreen = 'desktop';

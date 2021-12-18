@@ -4,7 +4,7 @@
 			:custom-class="$style['color-chip-item']"
 			@select-color="onSelectColor"
 		></color-chips>
-		<base-card :bg-color="colorSet.bgColor" :txt-color="colorSet.mainColor">
+		<base-card :bg-color="colorSet.bgColor" :txt-color="colorSet.mainColor" :custom-class="$style['quote__card']">
 			<template #head>
 				<img
 					:class="$style['quote__author-avatar']"
@@ -51,7 +51,7 @@ export default {
 				mainColor: this.quote.style.color.main,
 				alphaColor1: this.quote.style.color.alpha1,
 				alphaColor2: this.quote.style.color.alpha2,
-				borderColor: this.quote.style.borderColor
+				borderColor: this.quote.style.borderColor,
 			},
 		};
 	},
@@ -81,6 +81,13 @@ export default {
 	position: relative;
 }
 
+.quote:first-child .quote__card {
+	background-image: url('~@/assets/images/icons/quotation.svg');
+	background-repeat: no-repeat;
+	background-size: 104/13 +0em auto;
+	background-position: right 24/13 +0em top;
+}
+
 .quote:hover .color-chip-item {
 	opacity: 1;
 	transform: translate3d(0, 0, 0) scale(1);
@@ -91,7 +98,7 @@ export default {
 }
 
 .quote:hover .color-chip-item:nth-child(2) {
-	transition-delay: 0.10s;
+	transition-delay: 0.1s;
 }
 
 .quote:hover .color-chip-item:nth-child(3) {
@@ -99,8 +106,10 @@ export default {
 }
 
 .quote__author-avatar {
+	width: 30/13 +0em;
+	height: 30/13 +0em;
 	margin-right: 16/13 +0em;
-	border: 2px solid transparent;
+	border: 2/13 +0em solid transparent;
 	border-radius: 50%;
 }
 
@@ -130,5 +139,17 @@ export default {
 .quote__text::after {
 	content: '\201D';
 	margin-left: 2/13 +0em;
+}
+
+@media (min-width: 750/16 +0em) {
+	.quote:first-child .quote__card {
+		background-position: right 46/13 +0em top;
+	}
+}
+
+@media (min-width: 1200/16 +0em) {
+	.quote:first-child .quote__card {
+		background-position: right 80/13 +0em top;
+	}
 }
 </style>

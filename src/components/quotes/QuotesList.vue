@@ -30,23 +30,25 @@ export default {
 
 <style module lang="scss">
 .quotes {
-	max-width: 1110/13 +0em;
+	max-width: 340/13 +0em;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 24/13 +0em;
 	gap: 24/13 +0em;
 }
 
-@media (min-width: 600/16 +0em) {
+@media (min-width: 750/16 +0em) {
 	.quotes {
+		max-width: 700/13 +0em;
+		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 30/13 +0em;
 		gap: 30/13 +0em;
-		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media (min-width: 890/16 +0em) {
+@media (min-width: 1200/16 +0em) {
 	.quotes {
+		max-width: 1100/13 +0em;
 		grid-template-columns: repeat(4, 1fr);
 	}
 }

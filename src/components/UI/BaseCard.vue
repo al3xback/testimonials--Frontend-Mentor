@@ -1,5 +1,5 @@
 <template>
-	<figure :class="$style.card" :style="cardStyles">
+	<figure :class="cardClasses" :style="cardStyles">
 		<div :class="$style['card__head']">
 			<slot name="head"></slot>
 		</div>
@@ -11,8 +11,11 @@
 
 <script>
 export default {
-	props: ['bgColor', 'txtColor'],
+	props: ['bgColor', 'txtColor', 'customClass'],
 	computed: {
+		cardClasses() {
+			return [ this.$style.card, this.customClass ]
+		},
 		cardStyles() {
 			return {
 				'background-color': this.bgColor,
@@ -30,6 +33,7 @@ export default {
 	border-radius: 8/13 +0em;
 	box-shadow: 40px 60px 50/13 +0em -47px rgba(72, 85, 106, 0.24);
 	background-color: $moderate-violet;
+	transition: all 0.3s;
 }
 
 .card__head {
