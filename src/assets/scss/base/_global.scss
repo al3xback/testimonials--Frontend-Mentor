@@ -1,0 +1,32 @@
+body {
+	font-family: $ff-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 13/16 +0em;
+	font-weight: $fw-medium;
+	color: $very-dark-grayish-blue;
+	line-height: 18/13 +0em;
+	background-color: $bg-main;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+[class^="icon-"] {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
