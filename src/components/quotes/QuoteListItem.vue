@@ -116,6 +116,7 @@ export default {
 .quote__author-name {
 	margin-bottom: 4/13 +0em;
 	font-size: 13/13 +0em;
+	font-weight: $fw-medium;
 	line-height: 13/13 +0em;
 }
 
