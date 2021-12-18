@@ -8,6 +8,7 @@
 			<template #head>
 				<img
 					:class="$style['quote__author-avatar']"
+					:style="{ 'border-color': colorSet.borderColor }"
 					width="30"
 					height="30"
 					:src="require(`@/assets/images/${authorAvatar}.jpg`)"
@@ -50,6 +51,7 @@ export default {
 				mainColor: this.quote.style.color.main,
 				alphaColor1: this.quote.style.color.alpha1,
 				alphaColor2: this.quote.style.color.alpha2,
+				borderColor: this.quote.style.borderColor
 			},
 		};
 	},
@@ -98,7 +100,7 @@ export default {
 
 .quote__author-avatar {
 	margin-right: 16/13 +0em;
-	border: 2px solid orange;
+	border: 2px solid transparent;
 	border-radius: 50%;
 }
 

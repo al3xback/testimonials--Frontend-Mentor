@@ -13,7 +13,8 @@
 				"main": "hsl(0, 0%, 100%)",
 				"alpha1": "hsla(0, 0%, 100%, 0.5)",
 				"alpha2": "hsla(0, 0%, 100%, 0.7)"
-			}
+			},
+			"borderColor": "hsl(264, 82%, 70%)"
 		},
 		"position": {
 			"desktop": [
@@ -62,7 +63,8 @@
 				"main": "hsl(0, 0%, 100%)",
 				"alpha1": "hsla(0, 0%, 100%, 0.5)",
 				"alpha2": "hsla(0, 0%, 100%, 0.7)"
-			}
+			},
+			"borderColor": "hsl(217, 19%, 35%)"
 		},
 		"position": {
 			"desktop": [
@@ -111,7 +113,8 @@
 				"main": "hsl(217, 19%, 35%)",
 				"alpha1": "hsla(217, 19%, 35%, 0.5)",
 				"alpha2": "hsla(217, 19%, 35%, 0.7)"
-			}
+			},
+			"borderColor": "hsl(0, 0%, 100%)"
 		},
 		"position": {
 			"desktop": [
@@ -160,7 +163,8 @@
 				"main": "hsl(0, 0%, 100%)",
 				"alpha1": "hsl(0, 0%, 100%, 0.5)",
 				"alpha2": "hsl(0, 0%, 100%, 0.7)"
-			}
+			},
+			"borderColor": "hsl(263, 55%, 52%)"
 		},
 		"position": {
 			"desktop": [
@@ -209,7 +213,8 @@
 				"main": "hsl(217, 19%, 35%)",
 				"alpha1": "hsl(217, 19%, 35%, 0.5)",
 				"alpha2": "hsl(217, 19%, 35%, 0.7)"
-			}
+			},
+			"borderColor": "hsl(0, 0%, 100%)"
 		},
 		"position": {
 			"desktop": [
