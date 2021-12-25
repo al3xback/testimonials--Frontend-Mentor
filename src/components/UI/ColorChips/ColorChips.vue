@@ -18,7 +18,7 @@ export default {
 		ColorChip,
 	},
 	emits: ['select-color'],
-	props: ['custom-class'],
+	props: ['customClass'],
 	data() {
 		return {
 			colors: [

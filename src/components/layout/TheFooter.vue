@@ -29,8 +29,4 @@
 	font-size: 12/16 +0em;
 	text-align: center;
 }
-
-.btn--link {
-	// color: $bright-orange;
-}
 </style>

@@ -1,11 +1,13 @@
 <template>
-	<ul :class="$style.quotes">
+	<ul :class="quotesClasses">
 		<quote-list-item
 			v-for="quote in quotes"
 			:key="quote.id"
 			:quote="quote"
 			:shuffle-index="shuffleIndex"
 			:screen="screen"
+			:custom-quote-class="customQuoteClass"
+			:custom-skeleton-class="customSkeletonClass"
 		></quote-list-item>
 	</ul>
 </template>
@@ -19,12 +21,23 @@ export default {
 	components: {
 		QuoteListItem,
 	},
-	props: ['shuffleIndex', 'screen'],
+	props: [
+		'shuffleIndex',
+		'screen',
+		'customQuotesClass',
+		'customQuoteClass',
+		'customSkeletonClass',
+	],
 	data() {
 		return {
-			quotes: this.$options.quoteData
+			quotes: this.$options.quoteData,
 		};
-	}
+	},
+	computed: {
+		quotesClasses() {
+			return [this.$style.quotes, this.customQuotesClass];
+		},
+	},
 };
 </script>
 

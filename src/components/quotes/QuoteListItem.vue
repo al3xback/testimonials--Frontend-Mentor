@@ -1,10 +1,14 @@
 <template>
-	<li :class="$style.quote" :style="quoteStyles">
+	<li :class="quoteClasses" :style="quoteStyles">
 		<color-chips
-			:custom-class="$style['color-chip-item']"
+			:custom-class="$style['color-chip-cs']"
 			@select-color="onSelectColor"
 		></color-chips>
-		<base-card :bg-color="colorSet.bgColor" :txt-color="colorSet.mainColor" :custom-class="$style['quote__card']">
+		<base-card
+			:bg-color="colorSet.bgColor"
+			:txt-color="colorSet.mainColor"
+			:custom-class="$style['quote__card']"
+		>
 			<template #head>
 				<img
 					:class="$style['quote__author-avatar']"
@@ -38,12 +42,19 @@
 				</p>
 			</template>
 		</base-card>
+		<div :class="quoteSkeletonClasses"></div>
 	</li>
 </template>
 
 <script>
 export default {
-	props: ['quote', 'shuffleIndex', 'screen'],
+	props: [
+		'quote',
+		'shuffleIndex',
+		'screen',
+		'customQuoteClass',
+		'customSkeletonClass',
+	],
 	data() {
 		return {
 			colorSet: {
@@ -61,11 +72,17 @@ export default {
 			const firstName = name.split(' ')[0].toLowerCase();
 			return firstName;
 		},
+		quoteClasses() {
+			return [this.$style.quote, this.customQuoteClass];
+		},
 		quoteStyles() {
 			return {
 				'grid-area':
 					this.quote.position[this.screen][this.shuffleIndex],
 			};
+		},
+		quoteSkeletonClasses() {
+			return [this.$style['quote__skeleton'], this.customSkeletonClass];
 		},
 	},
 	methods: {
@@ -88,20 +105,20 @@ export default {
 	background-position: right 24/13 +0em top;
 }
 
-.quote:hover .color-chip-item {
+.quote:hover .color-chip-cs {
 	opacity: 1;
 	transform: translate3d(0, 0, 0) scale(1);
 }
 
-.quote:hover .color-chip-item:nth-child(1) {
+.quote:hover .color-chip-cs:nth-child(1) {
 	transition-delay: 0.15s;
 }
 
-.quote:hover .color-chip-item:nth-child(2) {
+.quote:hover .color-chip-cs:nth-child(2) {
 	transition-delay: 0.1s;
 }
 
-.quote:hover .color-chip-item:nth-child(3) {
+.quote:hover .color-chip-cs:nth-child(3) {
 	transition-delay: 0.05s;
 }
 
@@ -140,6 +157,16 @@ export default {
 .quote__text::after {
 	content: '\201D';
 	margin-left: 2/13 +0em;
+}
+
+.quote__skeleton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	background-color: $bg-main;
+	border-radius: 8/13 +0em;
 }
 
 @media (min-width: 750/16 +0em) {
