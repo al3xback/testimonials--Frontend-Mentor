@@ -15,6 +15,6 @@ module.exports = {
 		}
 	},
 	publicPath: process.env.NODE_ENV === 'production'
-		? '/testimonials-grid-section-challenge-hub--Frontend-Mentor/'
+		? '/testimonials-grid--Frontend-Mentor/'
 		: '/'
 };
