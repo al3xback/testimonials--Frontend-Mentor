@@ -17,6 +17,6 @@ module.exports = {
 	},
 	publicPath:
 		process.env.NODE_ENV === 'production'
-			? '/testimonials-grid--Frontend-Mentor/'
+			? '/testimonials--Frontend-Mentor/'
 			: '/',
 };
