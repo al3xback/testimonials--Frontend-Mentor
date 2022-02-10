@@ -14,15 +14,15 @@ export default {
 	props: ['bgColor', 'txtColor', 'customClass'],
 	computed: {
 		cardClasses() {
-			return [ this.$style.card, this.customClass ]
+			return [this.$style.card, this.customClass];
 		},
 		cardStyles() {
 			return {
 				'background-color': this.bgColor,
-				'color': this.txtColor
-			}
-		}
-	}
+				color: this.txtColor,
+			};
+		},
+	},
 };
 </script>
 

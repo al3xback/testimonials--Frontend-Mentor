@@ -6,8 +6,7 @@
 					type="button"
 					@click="onShuffleQuotes"
 					:class="$style['shuffle__btn']"
-					:disabled="shuffleModeActive"
-				>
+					:disabled="shuffleModeActive">
 					Shuffle
 				</button>
 			</div>
@@ -16,8 +15,9 @@
 				:screen="curScreen"
 				:custom-quotes-class="quotesCustomClasses"
 				:custom-quote-class="quoteCustomClasses"
-				:custom-skeleton-class="$style['quote-skeleton-cs']"
-			></quotes-list>
+				:custom-skeleton-class="
+					$style['quote-skeleton-cs']
+				"></quotes-list>
 			<div :class="$style['animate-block']"></div>
 		</base-container>
 	</main>

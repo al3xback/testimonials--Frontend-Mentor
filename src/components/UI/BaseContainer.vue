@@ -9,10 +9,10 @@ export default {
 	props: ['customClass'],
 	computed: {
 		containerClasses() {
-			return [ this.$style.container, this.customClass ]
-		}
-	}
-}
+			return [this.$style.container, this.customClass];
+		},
+	},
+};
 </script>
 
 <style module lang="scss">

@@ -5,8 +5,7 @@
 			:key="color.id"
 			:custom-class="customClass"
 			:color="color"
-			@select-color="selectColor"
-		></color-chip>
+			@select-color="selectColor"></color-chip>
 	</ul>
 </template>
 
@@ -28,7 +27,7 @@ export default {
 					mainColor: 'hsl(0, 0%, 100%)',
 					alphaColor1: 'hsla(0, 0%, 100%, 0.5)',
 					alphaColor2: 'hsla(0, 0%, 100%, 0.5)',
-					borderColor: 'hsl(211, 59%, 43%)'
+					borderColor: 'hsl(211, 59%, 43%)',
 				},
 				{
 					id: 'c2',
@@ -36,7 +35,7 @@ export default {
 					mainColor: 'hsl(0, 0%, 100%)',
 					alphaColor1: 'hsla(0, 0%, 100%, 0.5)',
 					alphaColor2: 'hsla(0, 0%, 100%, 0.5)',
-					borderColor: 'hsl(213, 51%, 46%)'
+					borderColor: 'hsl(213, 51%, 46%)',
 				},
 				{
 					id: 'c3',
@@ -44,7 +43,7 @@ export default {
 					mainColor: 'hsl(0, 0%, 100%)',
 					alphaColor1: 'hsla(0, 0%, 100%, 0.5)',
 					alphaColor2: 'hsla(0, 0%, 100%, 0.5)',
-					borderColor: 'hsl(289, 89%, 53%)'
+					borderColor: 'hsl(289, 89%, 53%)',
 				},
 				{
 					id: 'c4',
@@ -52,8 +51,8 @@ export default {
 					mainColor: 'hsl(0, 0%, 100%)',
 					alphaColor1: 'hsla(0, 0%, 100%, 0.5)',
 					alphaColor2: 'hsla(0, 0%, 100%, 0.5)',
-					borderColor: 'hsl(14, 86%, 58%)'
-				}
+					borderColor: 'hsl(14, 86%, 58%)',
+				},
 			],
 		};
 	},

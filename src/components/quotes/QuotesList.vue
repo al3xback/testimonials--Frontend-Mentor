@@ -7,8 +7,7 @@
 			:shuffle-index="shuffleIndex"
 			:screen="screen"
 			:custom-quote-class="customQuoteClass"
-			:custom-skeleton-class="customSkeletonClass"
-		></quote-list-item>
+			:custom-skeleton-class="customSkeletonClass"></quote-list-item>
 	</ul>
 </template>
 

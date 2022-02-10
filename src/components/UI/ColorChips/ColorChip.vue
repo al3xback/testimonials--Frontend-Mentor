@@ -4,8 +4,7 @@
 			type="button"
 			:style="{ 'background-color': color.bgColor }"
 			@click="selectColor"
-			aria-label="select-color"
-		></button>
+			aria-label="select-color"></button>
 	</li>
 </template>
 
@@ -15,8 +14,8 @@ export default {
 	props: ['color', 'customClass'],
 	computed: {
 		colorChipClasses() {
-			return [ this.$style['color-chip'], this.customClass ]
-		}
+			return [this.$style['color-chip'], this.customClass];
+		},
 	},
 	methods: {
 		selectColor() {

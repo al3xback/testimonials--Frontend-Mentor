@@ -2,13 +2,11 @@
 	<li :class="quoteClasses" :style="quoteStyles">
 		<color-chips
 			:custom-class="$style['color-chip-cs']"
-			@select-color="onSelectColor"
-		></color-chips>
+			@select-color="onSelectColor"></color-chips>
 		<base-card
 			:bg-color="colorSet.bgColor"
 			:txt-color="colorSet.mainColor"
-			:custom-class="$style['quote__card']"
-		>
+			:custom-class="$style['quote__card']">
 			<template #head>
 				<img
 					:class="$style['quote__author-avatar']"
@@ -16,16 +14,14 @@
 					width="30"
 					height="30"
 					:src="require(`@/assets/images/${authorAvatar}.jpg`)"
-					:alt="quote.author.name"
-				/>
+					:alt="quote.author.name" />
 				<div :class="$style['quote__author-profile']">
 					<h2 :class="$style['quote__author-name']">
 						{{ quote.author.name }}
 					</h2>
 					<p
 						:class="$style['quote__author-status']"
-						:style="{ color: colorSet.alphaColor1 }"
-					>
+						:style="{ color: colorSet.alphaColor1 }">
 						{{ quote.author.status }}
 					</p>
 				</div>
@@ -36,8 +32,7 @@
 				</p>
 				<p
 					:class="$style['quote__text']"
-					:style="{ color: colorSet.alphaColor2 }"
-				>
+					:style="{ color: colorSet.alphaColor2 }">
 					{{ quote.author.quoteText }}
 				</p>
 			</template>
