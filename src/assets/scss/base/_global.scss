@@ -2,10 +2,10 @@ body {
 	font-family: $ff-primary;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 13/16 +0em;
+	font-size: em(13);
 	font-weight: $fw-medium;
 	color: $very-dark-grayish-blue;
-	line-height: 18/13 +0em;
+	line-height: em(18, 13);
 	background-color: $bg-main;
 }
 

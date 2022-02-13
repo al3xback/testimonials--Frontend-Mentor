@@ -28,7 +28,7 @@ export default {
 <style module lang="scss">
 .color-chip {
 	opacity: 0;
-	transform: translate3d(8/13 +0em, 0, 0);
+	transform: translate3d(em(8, 13), 0, 0);
 	transition: all 0.3s;
 }
 

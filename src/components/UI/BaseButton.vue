@@ -13,10 +13,10 @@ export default {
 <style module lang="scss">
 .btn {
 	display: inline-block;
-	padding: 10/15 +0em 30/15 +0em;
+	padding: em(10, 13) em(30, 13);
 	background-color: $white;
-	border: 2/15 +0em solid $white;
-	border-radius: 25/15 + 0em;
+	border: em(2, 13) solid $white;
+	border-radius: em(25, 13);
 	font: inherit;
 	// color: $very-dark-cyan;
 	transition: all 0.3s;

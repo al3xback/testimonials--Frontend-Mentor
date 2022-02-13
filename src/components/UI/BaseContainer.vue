@@ -17,6 +17,6 @@ export default {
 
 <style module lang="scss">
 .container {
-	padding: 0 24/13 +0em;
+	padding: 0 em(24, 13);
 }
 </style>

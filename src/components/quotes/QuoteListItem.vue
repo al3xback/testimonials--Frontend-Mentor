@@ -96,8 +96,8 @@ export default {
 .quote:first-child .quote__card {
 	background-image: url('~@/assets/images/icons/quotation.svg');
 	background-repeat: no-repeat;
-	background-size: 104/13 +0em auto;
-	background-position: right 24/13 +0em top;
+	background-size: em(104, 13) auto;
+	background-position: right em(24, 13) top;
 }
 
 .quote:hover .color-chip-cs {
@@ -118,40 +118,40 @@ export default {
 }
 
 .quote__author-avatar {
-	width: 30/13 +0em;
-	height: 30/13 +0em;
-	margin-right: 16/13 +0em;
-	border: 2/13 +0em solid transparent;
+	width: em(30, 13);
+	height: em(30, 13);
+	margin-right: em(16, 13);
+	border: em(2, 13) solid transparent;
 	border-radius: 50%;
 }
 
 .quote__author-name {
-	margin-bottom: 4/13 +0em;
-	font-size: 13/13 +0em;
+	margin-bottom: em(4, 13);
+	font-size: em(13, 13);
 	font-weight: $fw-medium;
-	line-height: 13/13 +0em;
+	line-height: em(13, 13);
 }
 
 .quote__author-status {
-	font-size: 11/13 +0em;
-	line-height: 11/13 +0em;
+	font-size: em(11, 13);
+	line-height: em(11, 13);
 }
 
 .quote__caption {
-	margin-bottom: 16/20 +0em;
-	line-height: 24/20 +0em;
-	font-size: 20/13 +0em;
+	margin-bottom: em(16, 20);
+	line-height: em(24, 20);
+	font-size: em(20, 13);
 	font-weight: $fw-semibold;
 }
 
 .quote__text::before {
 	content: '\201C';
-	margin-right: 2/13 +0em;
+	margin-right: em(2, 13);
 }
 
 .quote__text::after {
 	content: '\201D';
-	margin-left: 2/13 +0em;
+	margin-left: em(2, 13);
 }
 
 .quote__skeleton {
@@ -161,18 +161,18 @@ export default {
 	width: 0;
 	height: 100%;
 	background-color: $bg-main;
-	border-radius: 8/13 +0em;
+	border-radius: em(8, 13);
 }
 
-@media (min-width: 750/16 +0em) {
+@media (min-width: em(750)) {
 	.quote:first-child .quote__card {
-		background-position: right 46/13 +0em top;
+		background-position: right em(46, 13) top;
 	}
 }
 
-@media (min-width: 1200/16 +0em) {
+@media (min-width: em(1200)) {
 	.quote:first-child .quote__card {
-		background-position: right 80/13 +0em top;
+		background-position: right em(80, 13) top;
 	}
 }
 </style>

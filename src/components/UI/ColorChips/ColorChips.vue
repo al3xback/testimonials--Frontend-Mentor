@@ -73,7 +73,7 @@ export default {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	gap: 4/13 +0em;
-	padding: 8/13 +0em 8/13 +0em 0 !important;
+	gap: em(4, 13);
+	padding: em(8, 13) em(8, 13) 0 !important;
 }
 </style>

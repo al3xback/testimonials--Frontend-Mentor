@@ -28,10 +28,11 @@ export default {
 
 <style module lang="scss">
 .card {
-	padding: 26/13 +0em 32/13 +0em 32/13 +0em;
+	padding: em(26, 13) em(32, 13) em(32, 13);
 	height: 100%;
-	border-radius: 8/13 +0em;
-	box-shadow: 40px 60px 50/13 +0em -47px rgba(72, 85, 106, 0.24);
+	border-radius: em(8, 13);
+	box-shadow: em(40, 13) em(60, 13) em(50, 13) em(-47, 13)
+		rgba(72, 85, 106, 0.24);
 	background-color: $moderate-violet;
 	transition: all 0.3s;
 }
@@ -39,6 +40,6 @@ export default {
 .card__head {
 	display: flex;
 	align-items: center;
-	margin-bottom: 16/13 +0em;
+	margin-bottom: em(16, 13);
 }
 </style>

@@ -118,7 +118,7 @@ export default {
 	align-items: center;
 	flex: auto;
 	flex-shrink: 1;
-	padding: 24/16 +0em 0;
+	padding: em(24) 0;
 }
 
 .container-cs {
@@ -132,23 +132,23 @@ export default {
 .shuffle__con {
 	display: flex;
 	justify-content: flex-end;
-	margin-bottom: 10/13 +0em;
+	margin-bottom: em(10, 13);
 }
 
 .shuffle__btn {
-	height: 32/13 +0em;
-	padding: 4/13 +0em 15/13 +0em;
+	height: em(36, 16);
+	padding: em(6, 16) em(20, 16);
 	background-color: #ffffff;
-	border: 1/13 +0em solid $light-gray;
-	border-radius: 8/13 +0em;
-	font-size: 16/13 +0em;
+	border: em(1, 16) solid $light-gray;
+	border-radius: em(8, 16);
+	font-size: em(16, 13);
 	color: $very-dark-grayish-blue;
 }
 
 .animate-block {
 	position: absolute;
-	top: 40/13 + 0em;
-	bottom: -20/13 + 0em;
+	top: em(40, 13);
+	bottom: em(-20, 13);
 	left: 0;
 	width: 0;
 	background-color: $bg-main;

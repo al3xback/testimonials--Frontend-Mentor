@@ -42,25 +42,25 @@ export default {
 
 <style module lang="scss">
 .quotes {
-	max-width: 340/13 +0em;
+	max-width: em(340, 13);
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: 24/13 +0em;
-	gap: 24/13 +0em;
+	grid-gap: em(24, 13);
+	gap: em(24, 13);
 }
 
-@media (min-width: 750/16 +0em) {
+@media (min-width: em(750)) {
 	.quotes {
-		max-width: 700/13 +0em;
+		max-width: em(700, 13);
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 30/13 +0em;
-		gap: 30/13 +0em;
+		grid-gap: em(30, 13);
+		gap: em(30, 13);
 	}
 }
 
-@media (min-width: 1200/16 +0em) {
+@media (min-width: em(1200)) {
 	.quotes {
-		max-width: 1100/13 +0em;
+		max-width: em(1100, 13);
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
