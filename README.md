@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/al3xback/testimonials-grid--Frontend-Mentor
-- Live Site URL: https://al3xback.github.io/testimonials-grid--Frontend-Mentor
+- Solution URL: https://github.com/al3xback/testimonials-vue-FM
+- Live Site URL: https://al3xback.github.io/testimonials-vue-FM
 
 ## My process
 
