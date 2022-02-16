@@ -33,7 +33,7 @@ export default {
 	border-radius: em(8, 13);
 	box-shadow: em(40, 13) em(60, 13) em(50, 13) em(-47, 13)
 		rgba(72, 85, 106, 0.24);
-	background-color: $moderate-violet;
+	background-color: $primary-1;
 	transition: all 0.3s;
 }
 

@@ -139,10 +139,10 @@ export default {
 	height: em(36, 16);
 	padding: em(6, 16) em(20, 16);
 	background-color: #ffffff;
-	border: em(1, 16) solid $light-gray;
+	border: em(1, 16) solid $neutral-1;
 	border-radius: em(8, 16);
 	font-size: em(16, 13);
-	color: $very-dark-grayish-blue;
+	color: $primary-2;
 }
 
 .animate-block {
@@ -151,7 +151,7 @@ export default {
 	bottom: em(-20, 13);
 	left: 0;
 	width: 0;
-	background-color: $bg-main;
+	background-color: $neutral-2;
 	transform-origin: right;
 }
 </style>

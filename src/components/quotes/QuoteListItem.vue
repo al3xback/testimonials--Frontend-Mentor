@@ -160,7 +160,7 @@ export default {
 	right: 0;
 	width: 0;
 	height: 100%;
-	background-color: $bg-main;
+	background-color: $neutral-2;
 	border-radius: em(8, 13);
 }
 
