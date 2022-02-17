@@ -2,13 +2,12 @@
 	<main :class="$style.main">
 		<base-container :custom-class="$style['container-cs']">
 			<div :class="$style['shuffle__con']">
-				<button
+				<base-button
 					type="button"
 					@click="onShuffleQuotes"
-					:class="$style['shuffle__btn']"
 					:disabled="shuffleModeActive">
 					Shuffle
-				</button>
+				</base-button>
 			</div>
 			<quotes-list
 				:shuffle-index="curShuffleIndex"
@@ -133,16 +132,6 @@ export default {
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: em(10, 13);
-}
-
-.shuffle__btn {
-	height: em(36, 16);
-	padding: em(6, 16) em(20, 16);
-	background-color: #ffffff;
-	border: em(1, 16) solid $neutral-1;
-	border-radius: em(8, 16);
-	font-size: em(16, 13);
-	color: $primary-2;
 }
 
 .animate-block {
