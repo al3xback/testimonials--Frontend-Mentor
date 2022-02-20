@@ -16,5 +16,5 @@ module.exports = {
 		},
 	},
 	publicPath:
-		process.env.NODE_ENV === 'production' ? '/testimonials-vue-FM/' : '/',
+		process.env.NODE_ENV === 'production' ? '/testimonials-vue/' : '/',
 };
