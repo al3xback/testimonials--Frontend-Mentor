@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import quoteData from '../json/quotes.json';
+import quoteData from '../../assets/json/quotes.json';
 import QuoteListItem from './QuoteListItem.vue';
 
 export default {
